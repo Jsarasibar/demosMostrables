@@ -10,11 +10,6 @@ Este repositorio incluye 3 demos simples para mostrar:
 2. `demo-comprobantes-a-excel`
 3. `demo-reporte-mensual`
 
-## Orden sugerido para presentar
-1. Comparacion de precios (caso corto, impacto rapido)
-2. Comprobantes a Excel (ahorro administrativo)
-3. Reporte mensual (consolidacion gerencial)
-
 ## Ejecucion
 ### 1) Comparacion de precios
 ```bash
