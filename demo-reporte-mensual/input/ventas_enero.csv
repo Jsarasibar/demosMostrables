@@ -1,0 +1,126 @@
+﻿id_venta,fecha,id_cliente,producto,categoria,cantidad,precio_unitario,descuento,canal,forma_pago
+V0004,2026-01-02,C019,Lapicera negra,Escritura,3,650,0,Mostrador,Tarjeta crédito
+V0067,2026-01-02,C001,Agenda semanal 2026,Organización,1,9500,0,Web,Transferencia
+V0011,2026-01-03,C006,Lápiz negro HB,Escritura,2,450,0,Mostrador,Tarjeta crédito
+V0032,2026-01-03,C016,Cuaderno universitario rayado,Cuadernos,1,3800,0,Web,Tarjeta crédito
+V0076,2026-01-03,C005,Regla 30 cm,Escolar,3,1100,0,Mostrador,Tarjeta crédito
+V0022,2026-01-04,C003,Cuaderno tapa dura A4,Cuadernos,1,5200,0,WhatsApp,Efectivo
+V0027,2026-01-04,C013,Marcador permanente negro,Escritura,2,1800,0,Mostrador,Tarjeta crédito
+V0015,2026-01-05,C004,Lapicera negra,Escritura,5,650,0,Mostrador,Transferencia
+V0038,2026-01-05,C022,Cuaderno universitario rayado,Cuadernos,15,3800,0.05,Instagram,Transferencia
+V0044,2026-01-05,C022,Lapicera negra,Escritura,5,650,0.05,Mercado Libre,Efectivo
+V0089,2026-01-05,C019,Cuaderno universitario rayado,Cuadernos,1,3800,0,WhatsApp,Transferencia
+V0105,2026-01-05,C020,Regla 30 cm,Escolar,5,1100,0.05,Mostrador,Tarjeta débito
+V0124,2026-01-05,C011,Lapicera azul,Escritura,6,650,0,Web,Transferencia
+V0085,2026-01-06,C012,Lapicera azul,Escritura,2,650,0,Mostrador,Transferencia
+V0010,2026-01-07,C011,Resaltador amarillo,Escritura,3,1200,0,WhatsApp,Tarjeta débito
+V0033,2026-01-07,C010,Cuaderno tapa dura A4,Cuadernos,2,5200,0,Mostrador,Efectivo
+V0037,2026-01-07,C002,Cuaderno tapa dura A4,Cuadernos,1,5200,0.05,Instagram,Efectivo
+V0117,2026-01-07,C022,Compás escolar,Escolar,12,3200,0.05,WhatsApp,Transferencia
+V0065,2026-01-08,C013,Abrochadora mediana,Oficina,1,5900,0,Mostrador,Tarjeta débito
+V0096,2026-01-08,C003,Carpeta A4 con elástico,Organización,2,2800,0,Mostrador,Transferencia
+V0121,2026-01-08,C013,Cuaderno universitario cuadriculado,Cuadernos,2,3900,0,Mercado Libre,Efectivo
+V0026,2026-01-09,C001,Resma A4 75g,Papelería,1,7200,0,Web,Tarjeta crédito
+V0107,2026-01-09,C019,Sacapuntas metálico,Escolar,2,900,0,Instagram,Transferencia
+V0115,2026-01-09,C022,Broches 24/6,Oficina,15,1500,0.05,Web,Tarjeta débito
+V0123,2026-01-09,C017,Marcador permanente negro,Escritura,1,1800,0,Mostrador,Tarjeta crédito
+V0046,2026-01-10,C021,Cinta adhesiva transparente,Oficina,5,1300,0.12,Mercado Libre,Efectivo
+V0056,2026-01-10,C020,Cartulina color,Papelería,10,850,0.1,Instagram,Transferencia
+V0058,2026-01-10,C001,Cuaderno universitario rayado,Cuadernos,2,3800,0,WhatsApp,Tarjeta débito
+V0079,2026-01-10,C011,Lápiz negro HB,Escritura,2,450,0,Mercado Libre,Tarjeta débito
+V0111,2026-01-10,C019,Block de hojas A4 rayadas,Papelería,1,3100,0,Instagram,Tarjeta débito
+V0112,2026-01-10,C020,Lapicera azul,Escritura,8,650,0.1,Instagram,Tarjeta débito
+V0116,2026-01-10,C014,Separadores escolares,Organización,1,1600,0,Instagram,Tarjeta crédito
+V0045,2026-01-11,C015,Carpeta A4 con elástico,Organización,1,2800,0,Web,Transferencia
+V0055,2026-01-11,C020,Pegamento en barra,Escolar,8,1000,0.05,Instagram,Transferencia
+V0064,2026-01-11,C006,Folios A4 x10,Organización,3,1400,0,WhatsApp,Transferencia
+V0103,2026-01-11,C017,Lapicera azul,Escritura,6,650,0,Mostrador,Efectivo
+V0104,2026-01-11,C012,Compás escolar,Escolar,1,3200,0,Mostrador,Tarjeta crédito
+V0106,2026-01-11,C003,Resaltador amarillo,Escritura,3,1200,0,Instagram,Tarjeta débito
+V0113,2026-01-11,C011,Cuaderno tapa dura A4,Cuadernos,2,5200,0,Web,Transferencia
+V0005,2026-01-12,C003,Sacapuntas metálico,Escolar,2,900,0,Instagram,Tarjeta débito
+V0047,2026-01-12,C019,Block de hojas A4 rayadas,Papelería,2,3100,0,WhatsApp,Tarjeta débito
+V0061,2026-01-12,C016,Resma A4 75g,Papelería,1,7200,0,Mostrador,Transferencia
+V0082,2026-01-12,C006,Goma de borrar blanca,Escolar,2,500,0,Web,Transferencia
+V0093,2026-01-12,C020,Broches 24/6,Oficina,5,1500,0.1,Web,Efectivo
+V0118,2026-01-12,C017,Cinta adhesiva transparente,Oficina,2,1300,0,WhatsApp,Tarjeta débito
+V0009,2026-01-13,C006,Resaltador amarillo,Escritura,1,1200,0,Mostrador,Tarjeta débito
+V0021,2026-01-13,C021,Broches 24/6,Oficina,10,1500,0.08,Mostrador,Tarjeta crédito
+V0042,2026-01-13,C021,Pegamento en barra,Escolar,10,1000,0.1,Mostrador,Tarjeta crédito
+V0099,2026-01-13,C017,Resaltador amarillo,Escritura,2,1200,0,Mercado Libre,Transferencia
+V0102,2026-01-13,C005,Lápiz negro HB,Escritura,4,450,0,Mostrador,Efectivo
+V0030,2026-01-14,C018,Abrochadora mediana,Oficina,1,5900,0,Mostrador,Transferencia
+V0034,2026-01-14,C007,Folios A4 x10,Organización,2,1400,0,Mercado Libre,Tarjeta débito
+V0040,2026-01-14,C004,Block de hojas A4 rayadas,Papelería,2,3100,0,Mercado Libre,Efectivo
+V0054,2026-01-14,C021,Cinta adhesiva transparente,Oficina,8,1300,0.08,Mercado Libre,Transferencia
+V0075,2026-01-14,C017,Resma A4 75g,Papelería,1,7200,0,WhatsApp,Transferencia
+V0119,2026-01-14,C020,Cuaderno universitario rayado,Cuadernos,12,3800,0.05,WhatsApp,Transferencia
+V0029,2026-01-15,C009,Regla 30 cm,Escolar,1,1100,0,Web,Efectivo
+V0031,2026-01-15,C005,Compás escolar,Escolar,1,3200,0,Web,Transferencia
+V0053,2026-01-15,C020,Cinta adhesiva transparente,Oficina,8,1300,0.1,Mostrador,Tarjeta débito
+V0062,2026-01-15,C008,Resma A4 75g,Papelería,1,7200,0,Instagram,Transferencia
+V0013,2026-01-16,C004,Lapicera negra,Escritura,5,650,0,Mostrador,Tarjeta débito
+V0016,2026-01-16,C013,Cartulina color,Papelería,6,850,0,Instagram,Efectivo
+V0041,2026-01-16,C015,Cuaderno universitario rayado,Cuadernos,1,3800,0.05,WhatsApp,Efectivo
+V0070,2026-01-16,C002,Resaltador amarillo,Escritura,1,1200,0,Mercado Libre,Tarjeta débito
+V0094,2026-01-16,C014,Resma A4 75g,Papelería,1,7200,0.1,Mostrador,Efectivo
+V0110,2026-01-17,C008,Lapicera roja,Escritura,2,650,0,WhatsApp,Tarjeta débito
+V0114,2026-01-17,C011,Cuaderno universitario cuadriculado,Cuadernos,2,3900,0,Instagram,Efectivo
+V0059,2026-01-18,C003,Pegamento en barra,Escolar,1,1000,0,Mercado Libre,Efectivo
+V0090,2026-01-18,C016,Lápiz negro HB,Escritura,3,450,0,Mostrador,Tarjeta crédito
+V0003,2026-01-19,C005,Resma A4 75g,Papelería,2,7200,0,Instagram,Tarjeta débito
+V0024,2026-01-19,C019,Resma A4 75g,Papelería,1,7200,0,Instagram,Transferencia
+V0048,2026-01-19,C001,Lapicera azul,Escritura,5,650,0,Instagram,Tarjeta crédito
+V0071,2026-01-19,C015,Cartulina color,Papelería,3,850,0,Mercado Libre,Transferencia
+V0122,2026-01-19,C004,Marcador permanente negro,Escritura,2,1800,0,Web,Tarjeta débito
+V0012,2026-01-20,C021,Goma de borrar blanca,Escolar,20,500,0.12,WhatsApp,Tarjeta crédito
+V0028,2026-01-20,C014,Resaltador amarillo,Escritura,2,1200,0,Mostrador,Efectivo
+V0039,2026-01-20,C014,Goma de borrar blanca,Escolar,2,500,0,Mercado Libre,Efectivo
+V0049,2026-01-20,C014,Compás escolar,Escolar,1,3200,0,Web,Tarjeta débito
+V0077,2026-01-20,C009,Lápiz negro HB,Escritura,2,450,0,WhatsApp,Tarjeta crédito
+V0087,2026-01-20,C001,Goma de borrar blanca,Escolar,2,500,0,Mercado Libre,Efectivo
+V0101,2026-01-20,C022,Cuaderno tapa dura A4,Cuadernos,10,5200,0.05,Mercado Libre,Transferencia
+V0108,2026-01-20,C015,Cuaderno universitario cuadriculado,Cuadernos,1,3900,0,Mostrador,Efectivo
+V0066,2026-01-21,C009,Broches 24/6,Oficina,1,1500,0,Mostrador,Efectivo
+V0086,2026-01-21,C015,Separadores escolares,Organización,1,1600,0,Mostrador,Transferencia
+V0001,2026-01-22,C003,Separadores escolares,Organización,1,1600,0,Mercado Libre,Tarjeta débito
+V0019,2026-01-22,C008,Block de hojas A4 rayadas,Papelería,3,3100,0,WhatsApp,Efectivo
+V0084,2026-01-22,C001,Lápiz negro HB,Escritura,2,450,0,Mostrador,Efectivo
+V0091,2026-01-22,C021,Compás escolar,Escolar,8,3200,0.12,Mostrador,Transferencia
+V0092,2026-01-22,C007,Abrochadora mediana,Oficina,2,5900,0,Mercado Libre,Tarjeta débito
+V0023,2026-01-23,C012,Cuaderno universitario rayado,Cuadernos,2,3800,0,Instagram,Tarjeta crédito
+V0081,2026-01-23,C001,Block de hojas A4 rayadas,Papelería,1,3100,0,Mostrador,Transferencia
+V0098,2026-01-23,C014,Cuaderno tapa dura A4,Cuadernos,3,5200,0,Web,Transferencia
+V0109,2026-01-23,C003,Resaltador amarillo,Escritura,3,1200,0.05,WhatsApp,Tarjeta débito
+V0043,2026-01-24,C008,Agenda semanal 2026,Organización,1,9500,0,Instagram,Tarjeta crédito
+V0068,2026-01-24,C017,Cuaderno tapa dura A4,Cuadernos,1,5200,0,Instagram,Tarjeta crédito
+V0074,2026-01-24,C007,Resaltador amarillo,Escritura,2,1200,0,Mostrador,Efectivo
+V0088,2026-01-24,C020,Resaltador amarillo,Escritura,20,1200,0.1,Web,Tarjeta débito
+V0097,2026-01-24,C012,Abrochadora mediana,Oficina,1,5900,0,WhatsApp,Efectivo
+V0125,2026-01-24,C007,Broches 24/6,Oficina,2,1500,0,Instagram,Transferencia
+V0006,2026-01-25,C011,Lapicera azul,Escritura,3,650,0.1,Mercado Libre,Tarjeta débito
+V0018,2026-01-25,C021,Resaltador amarillo,Escritura,15,1200,0.08,WhatsApp,Efectivo
+V0036,2026-01-25,C014,Separadores escolares,Organización,1,1600,0.1,WhatsApp,Tarjeta crédito
+V0063,2026-01-25,C021,Cuaderno universitario cuadriculado,Cuadernos,10,3900,0.12,Instagram,Efectivo
+V0100,2026-01-25,C013,Separadores escolares,Organización,1,1600,0,Mercado Libre,Transferencia
+V0020,2026-01-26,C021,Tijera escolar,Escolar,15,2400,0.1,WhatsApp,Efectivo
+V0120,2026-01-26,C010,Cuaderno tapa dura A4,Cuadernos,1,5200,0,Instagram,Transferencia
+V0035,2026-01-27,C014,Carpeta A4 con elástico,Organización,1,2800,0,Mostrador,Efectivo
+V0052,2026-01-27,C020,Pegamento en barra,Escolar,5,1000,0.08,Mercado Libre,Transferencia
+V0060,2026-01-27,C013,Carpeta A4 con elástico,Organización,1,2800,0,Mostrador,Tarjeta débito
+V0095,2026-01-27,C007,Marcador permanente negro,Escritura,3,1800,0,Mostrador,Efectivo
+V0057,2026-01-28,C013,Tijera escolar,Escolar,1,2400,0,Mostrador,Transferencia
+V0072,2026-01-28,C021,Compás escolar,Escolar,8,3200,0.12,WhatsApp,Tarjeta débito
+V0073,2026-01-28,C016,Separadores escolares,Organización,3,1600,0,Mostrador,Transferencia
+V0078,2026-01-28,C011,Separadores escolares,Organización,3,1600,0,Web,Transferencia
+V0080,2026-01-28,C012,Lapicera azul,Escritura,4,650,0,Web,Tarjeta débito
+V0083,2026-01-28,C003,Lápiz negro HB,Escritura,4,450,0.1,Mostrador,Efectivo
+V0007,2026-01-29,C009,Lapicera negra,Escritura,1,650,0.05,Mercado Libre,Tarjeta crédito
+V0008,2026-01-29,C006,Lapicera azul,Escritura,2,650,0,Mercado Libre,Efectivo
+V0050,2026-01-29,C001,Sacapuntas metálico,Escolar,1,900,0,WhatsApp,Transferencia
+V0051,2026-01-29,C010,Cuaderno universitario cuadriculado,Cuadernos,1,3900,0,Mostrador,Efectivo
+V0069,2026-01-29,C019,Lapicera azul,Escritura,3,650,0,Mercado Libre,Tarjeta débito
+V0002,2026-01-30,C014,Cuaderno universitario rayado,Cuadernos,1,3800,0.05,Mostrador,Tarjeta débito
+V0014,2026-01-30,C014,Sacapuntas metálico,Escolar,1,900,0,Mostrador,Efectivo
+V0017,2026-01-30,C013,Resaltador amarillo,Escritura,2,1200,0.1,Mostrador,Efectivo
+V0025,2026-01-30,C013,Lapicera azul,Escritura,2,650,0.05,Instagram,Efectivo

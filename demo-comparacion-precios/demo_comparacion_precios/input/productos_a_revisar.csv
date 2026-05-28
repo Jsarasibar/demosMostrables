@@ -1,0 +1,16 @@
+Producto,URL,Sitio
+Cuaderno A4 rayado 80 hojas,mock_web/cuaderno_a4_norte.html,Librería Norte
+Cuaderno A4 rayado 80 hojas,mock_web/cuaderno_a4_central.html,Papelera Central
+Cuaderno A4 rayado 80 hojas,mock_web/cuaderno_a4_office.html,Office Market
+Lapicera azul BIC x50,mock_web/lapicera_bic_norte.html,Librería Norte
+Lapicera azul BIC x50,mock_web/lapicera_bic_central.html,Papelera Central
+Lapicera azul BIC x50,mock_web/lapicera_bic_mayorista.html,Mayorista Escolar
+Lápiz negro HB x12,mock_web/lapiz_hb_central.html,Papelera Central
+Lápiz negro HB x12,mock_web/lapiz_hb_mayorista.html,Mayorista Escolar
+Lápiz negro HB x12,mock_web/lapiz_hb_office.html,Office Market
+Resma A4 75g x500 hojas,mock_web/resma_a4_norte.html,Librería Norte
+Resma A4 75g x500 hojas,mock_web/resma_a4_central.html,Papelera Central
+Resma A4 75g x500 hojas,mock_web/resma_a4_office.html,Office Market
+Carpeta oficio con elástico,mock_web/carpeta_oficio_norte.html,Librería Norte
+Carpeta oficio con elástico,mock_web/carpeta_oficio_mayorista.html,Mayorista Escolar
+Carpeta oficio con elástico,mock_web/carpeta_oficio_office.html,Office Market

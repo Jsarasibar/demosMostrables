@@ -1,0 +1,1 @@
+No requiere dependencias externas para la extracción simulada.
