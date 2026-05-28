@@ -27,7 +27,6 @@ python src/generar_comparacion_precios.py
 - Script: `src/generar_comparacion_precios.py`
 - Input: `input/productos_a_revisar.csv`
 - Output: `output/comparacion_precios_extraida.csv`
-- Reporte de analisis/mejoras: `reporte_analisis_demo.txt`
 
 ## Checklist de demo
 - Corre en menos de 30s.

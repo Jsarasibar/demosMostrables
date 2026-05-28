@@ -30,7 +30,6 @@ python src/generar_reporte_comprobantes.py
 - Script: `src/generar_reporte_comprobantes.py`
 - Input: `input/*.pdf`
 - Output principal: `output/reporte_comprobantes.xlsx`
-- Reporte de analisis/mejoras: `reporte_analisis_demo.txt`
 
 ## Checklist de demo
 - Procesa todos los PDFs de input.

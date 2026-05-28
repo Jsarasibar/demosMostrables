@@ -30,7 +30,6 @@ python src/generar_reporte.py
 ## Archivos clave
 - Script: `src/generar_reporte.py`
 - Output principal: `output/reporte_mensual.xlsx`
-- Reporte de analisis/mejoras: `reporte_analisis_demo.txt`
 
 ## Checklist de demo
 - Titulo del reporte sale del periodo real de datos.
