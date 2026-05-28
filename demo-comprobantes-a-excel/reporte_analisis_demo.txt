@@ -1,0 +1,131 @@
+﻿ANALISIS DETALLADO - DEMO COMPROBANTES A EXCEL
+
+1) Funcionalidad actual
+- Objetivo: extraer datos clave desde PDFs de comprobantes y estructurarlos para analisis administrativo/contable.
+- Flujo actual:
+  1. Recorre input/*.pdf
+  2. Extrae texto con PyMuPDF
+  3. Busca patrones con regex (fecha, proveedor, CUIT, numero, neto, IVA, total)
+  4. Normaliza importes
+  5. Imprime registros por consola
+- Valor que ya demuestra bien:
+  - Reduce carga manual.
+  - Estandariza datos que llegan desordenados.
+  - Conserva "archivo origen" para trazabilidad.
+
+2) Que hay que cambiar si o si (obligatorio)
+- Inconsistencia critica README vs codigo:
+  - README dice que genera output/reporte_comprobantes.xlsx.
+  - Script actual NO genera Excel, solo imprime diccionarios.
+  - Esto debe corregirse si o si para una demo confiable.
+- Persistencia de salida:
+  - Guardar siempre resultado en archivo (CSV o XLSX), no depender de consola.
+- Manejo de faltantes y formato:
+  - Si no encuentra un campo, hoy deja vacio/0 sin contexto.
+  - Agregar columna "estado_extraccion" y "observaciones" por comprobante.
+
+3) Mejoras recomendadas (simples y de alto impacto)
+- Generar dos salidas:
+  - reporte_comprobantes.xlsx (para mostrar)
+  - output/extraccion_preview.txt o CSV (auditoria tecnica)
+- Agregar validaciones contables basicas:
+  - Verificar que Neto + IVA ~= Total (con tolerancia)
+  - Marcar posibles inconsistencias.
+- Agregar resumen final:
+  - Cantidad de PDFs procesados
+  - Cuantos con extraccion completa
+  - Cuantos con alertas
+
+4) Riesgos de demo y mitigacion
+- Riesgo: variabilidad de formatos PDF.
+  - Mensaje correcto: "Esta demo usa plantillas simuladas; en proyecto real ajustamos patrones por proveedor/tipo de comprobante".
+- Riesgo: PDFs escaneados como imagen.
+  - Aclarar que ese caso requiere OCR (fuera de alcance de esta demo base).
+
+5) Guion sugerido para demostrar (6-8 min)
+- Antes:
+  - "Llegan 50 comprobantes y se cargan a mano".
+- Automatizacion:
+  - Mostrar carpeta input con varios PDFs y ejecutar script.
+- Resultado:
+  - Abrir Excel final y mostrar columnas estandar.
+  - Filtrar por proveedor o fecha.
+- Cierre:
+  - "Se pasa de carga manual repetitiva a revision de excepciones".
+
+6) Alcance recomendado (mantener demo liviana)
+- Mantener:
+  - Regex + PDF de texto
+  - Campos principales
+  - Trazabilidad por archivo
+- Evitar por ahora:
+  - OCR avanzado
+  - Clasificacion documental con IA
+  - Multiples tipos de moneda/impuestos complejos
+
+7) Checklist de "demo lista para vender"
+- Script efectivamente crea el Excel prometido.
+- Todos los PDFs de input se ven en la salida.
+- Existe al menos un caso con alerta controlada.
+- README, script y resultado coinciden.
+- Mensaje comercial se entiende en menos de 1 minuto.
+
+Conclusion
+La demo tiene una propuesta muy fuerte y concreta, pero hoy hay una brecha funcional importante: la salida prometida no se genera desde el script actual. Corrigiendo eso y agregando estado de extraccion, queda excelente para mostrar automatizacion real con bajo riesgo.
+
+---
+ERRORES/OBSERVACIONES VERIFICADAS (Revision tecnica del 2026-05-28)
+- Error de ejecucion real (bloqueante):
+  - Al ejecutar `python src/generar_reporte_comprobantes.py` falla con `ModuleNotFoundError: No module named 'fitz'`.
+  - Causa: dependencia `PyMuPDF` no instalada en el entorno actual.
+- Error funcional/conceptual (bloqueante para demo):
+  - README promete `output/reporte_comprobantes.xlsx`.
+  - El script actual no exporta Excel; solo imprime diccionarios en consola.
+  - Evidencia en codigo: uso de `print(r)` y ausencia de `to_excel`.
+- Riesgo tecnico:
+  - Si un patron regex no coincide, se completa con vacio/0 sin marcar alerta por fila.
+  - Puede introducir errores silenciosos en datos contables.
+
+---
+CAMBIOS IMPLEMENTADOS (2026-05-28)
+1) Salida real a Excel
+- El script ahora genera `output/reporte_comprobantes.xlsx` (no solo consola).
+- Se mantiene `output/extraccion_preview.txt` como salida tecnica de auditoria.
+- Error funcional README vs codigo: RESUELTO.
+
+2) Estado y observaciones por comprobante
+- Se agregaron columnas:
+  - `Estado extraccion` (OK / Con alertas / Error)
+  - `Observaciones`
+- Si faltan campos clave (Fecha, Proveedor, CUIT, Nº comprobante), queda marcado en observaciones.
+
+3) Validacion contable basica
+- Se valida `Neto + IVA ~= Total` con tolerancia de 1.0.
+- Si no coincide, se marca alerta en el registro.
+
+4) Manejo de errores por archivo
+- Cada PDF se procesa en `try/except`.
+- Si un archivo falla, se registra fila con `Estado extraccion = Error` y detalle en observaciones sin frenar toda la corrida.
+
+5) Dependencias ajustadas para entorno actual
+- Se migro de `PyMuPDF` a `pypdf` para compatibilidad con Python 3.14 de este entorno.
+- Se agrego `openpyxl` para exportar XLSX.
+- Ejecucion recomendada en este entorno: `python -m pip install -r requirements.txt --target .deps`.
+
+6) Ejecucion verificada post-cambios
+- Script ejecutado con exito.
+- Resultado verificado:
+  - Comprobantes procesados: 6
+  - Extraccion OK: 6
+  - Con alertas/errores: 0
+  - Excel generado correctamente.
+
+---
+ESTADO ACTUAL DE ERRORES DETECTADOS
+- ModuleNotFoundError de `fitz`: RESUELTO (migracion a pypdf + install local en `.deps`).
+- README promete Excel pero script no lo genera: RESUELTO.
+- Falta de estado/alertas por fila: RESUELTO.
+- Riesgo de error silencioso: MITIGADO con observaciones y validacion contable.
+- Observacion menor no bloqueante:
+  - `pypdf` muestra warnings de parseo (`incorrect startxref pointer`) en estos PDFs simulados,
+    pero la extraccion se completa bien y la salida se genera.

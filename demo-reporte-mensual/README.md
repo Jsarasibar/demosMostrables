@@ -1,46 +1,39 @@
-# Demo: reporte mensual automático para librería
+﻿# Demo - Reporte mensual automatico
 
-Esta demo muestra cómo transformar archivos separados de ventas, gastos y clientes en un único reporte mensual en Excel.
+## Objetivo
+Mostrar como consolidar ventas, gastos y clientes en un reporte mensual unico listo para decision.
 
-## Entrada
+## Problema (Antes)
+- Datos repartidos en archivos separados.
+- Armado manual del reporte mensual.
+- Poca visibilidad de metricas clave en un solo lugar.
 
-Los archivos de entrada están en la carpeta `input/`:
+## Automatizacion
+- Entradas:
+  - `input/ventas_enero.csv`
+  - `input/gastos_enero.csv`
+  - `input/clientes.xlsx`
+- Proceso: limpieza, cruces, metricas, validaciones y visualizacion.
+- Salida: `output/reporte_mensual.xlsx`
 
-- `ventas_enero.csv`
-- `gastos_enero.csv`
-- `clientes.xlsx`
+## Resultado (Despues)
+- Resumen ejecutivo con KPI.
+- Tablas por producto/categoria/canal/clientes.
+- Hoja de control de calidad para dar confianza en los datos.
 
-## Salida
-
-El reporte final se genera en:
-
-- `output/reporte_mensual.xlsx`
-
-## Cómo ejecutar
-
+## Como ejecutar
 ```bash
-pip install -r requirements.txt
+python -m pip install -r requirements.txt --target .deps
 python src/generar_reporte.py
 ```
 
-## Qué genera
+## Archivos clave
+- Script: `src/generar_reporte.py`
+- Output principal: `output/reporte_mensual.xlsx`
+- Reporte de analisis/mejoras: `reporte_analisis_demo.txt`
 
-El Excel final incluye:
-
-- Resumen mensual
-- Total vendido
-- Total gastado
-- Ganancia estimada
-- Productos más vendidos
-- Ventas por categoría
-- Gastos por categoría
-- Clientes
-- Datos procesados
-- Gráficos simples
-
-## Nota comercial
-
-La demo busca mostrar el antes/después:
-
-Antes: datos separados en planillas.
-Después: reporte automático listo para revisar.
+## Checklist de demo
+- Titulo del reporte sale del periodo real de datos.
+- Regla de descuento correctamente normalizada.
+- El reporte se genera sin errores.
+- Incluye hoja de control de calidad.

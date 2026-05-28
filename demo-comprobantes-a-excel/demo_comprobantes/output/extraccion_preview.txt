@@ -1,6 +1,0 @@
-{'Fecha': '05/01/2026', 'Proveedor': 'Distribuidora Papelera Sur S.A.', 'CUIT': '30-71624891-7', 'Nº comprobante': '0003-00001248', 'Neto': 217250.0, 'IVA': 45622.5, 'Total': 262872.5, 'Archivo origen': 'factura_001.pdf'}
-{'Fecha': '08/01/2026', 'Proveedor': 'Mayorista Escolar Norte SRL', 'CUIT': '30-68945123-4', 'Nº comprobante': '0007-00003419', 'Neto': 243200.0, 'IVA': 51072.0, 'Total': 294272.0, 'Archivo origen': 'factura_002.pdf'}
-{'Fecha': '12/01/2026', 'Proveedor': 'Librería Creativa Integral', 'CUIT': '27-24156389-8', 'Nº comprobante': '0001-00000876', 'Neto': 240750.0, 'IVA': 0.0, 'Total': 240750.0, 'Archivo origen': 'factura_003.pdf'}
-{'Fecha': '17/01/2026', 'Proveedor': 'Insumos Oficina Federal S.A.', 'CUIT': '30-70081236-5', 'Nº comprobante': '0004-00002115', 'Neto': 326300.0, 'IVA': 68523.0, 'Total': 394823.0, 'Archivo origen': 'factura_004.pdf'}
-{'Fecha': '23/01/2026', 'Proveedor': 'Packaging y Bolsas del Centro', 'CUIT': '30-66541987-2', 'Nº comprobante': '0002-00005602', 'Neto': 170000.0, 'IVA': 35700.0, 'Total': 205700.0, 'Archivo origen': 'factura_005.pdf'}
-{'Fecha': '28/01/2026', 'Proveedor': 'Tecnología para Comercios SRL', 'CUIT': '30-71190284-1', 'Nº comprobante': '0009-00001432', 'Neto': 60500.0, 'IVA': 12705.0, 'Total': 73205.0, 'Archivo origen': 'factura_006.pdf'}

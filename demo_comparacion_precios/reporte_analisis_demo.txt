@@ -1,0 +1,129 @@
+﻿ANALISIS DETALLADO - DEMO COMPARACION DE PRECIOS
+
+1) Funcionalidad actual
+- Objetivo: tomar un listado de productos y URLs (locales en la demo), extraer datos desde HTML y generar una salida tabular para comparar precios.
+- Flujo actual:
+  1. Lee input/productos_a_revisar.csv
+  2. Abre cada archivo HTML indicado en la columna URL
+  3. Extrae: producto, sitio, precio, estado, observaciones
+  4. Agrega fecha de revision (date.today)
+  5. Genera output/comparacion_precios_extraida.csv
+- Valor que ya demuestra bien:
+  - Evita revisar pagina por pagina.
+  - Ordena informacion en un formato listo para analizar.
+  - Incluye trazabilidad del archivo origen.
+
+2) Que hay que cambiar si o si (obligatorio)
+- Alinear README con salida real:
+  - README promete output/comparacion_precios.xlsx, pero el script genera CSV.
+  - Hay que elegir una sola verdad:
+    - O cambiar README a CSV, o
+    - (recomendado para demo comercial) generar tambien XLSX.
+- Manejo de errores basico:
+  - Si falta un HTML o cambia estructura, hoy puede romperse.
+  - Agregar try/except por fila y columna "error_extraccion" para no frenar toda la corrida.
+- Validacion minima de campos:
+  - Si "Producto" o "Sitio" viene vacio, marcar estado "Revisar" en vez de dejar silencioso.
+
+3) Mejoras recomendadas (sin complejizar)
+- Agregar columnas derivadas simples para decision:
+  - "Precio minimo_por_producto"
+  - "Diferencia_vs_minimo"
+  - "Proveedor_mas_barato" (por producto)
+- Estandarizar estado de stock:
+  - Mapear valores a: Disponible / Sin stock / Consultar.
+- Mostrar resumen final por consola:
+  - Cantidad total de filas
+  - Cuantos productos sin precio
+  - Cuantos sitios con mejor precio
+
+4) Riesgos de demo y como cubrirlos
+- Riesgo: "Esto no es scraping real".
+  - Respuesta demo: "Correcto, se usa HTML simulado para evitar problemas legales/tecnicos en vivo y enfocarnos en el resultado de negocio".
+- Riesgo: precio no numerico (ej. "Consultar").
+  - Ya se contempla parcialmente; conviene mostrarlo como caso de borde intencional.
+
+5) Guion sugerido para mostrar la demo (5-7 min)
+- Antes:
+  - "Hoy una persona compara precios en 10-50 paginas manualmente".
+- Automatizacion:
+  - Mostrar CSV de entrada y ejecutar script.
+- Resultado:
+  - Abrir salida y filtrar por producto para ver quien esta mas barato.
+- Cierre:
+  - "No reemplaza decision comercial; acelera 80% la carga y comparacion".
+
+6) Alcance recomendado (demo simple, no proyecto avanzado)
+- Mantener:
+  - Entradas locales
+  - Extraccion por patrones simples
+  - Salida tabular clara
+- Evitar por ahora:
+  - Navegadores automatizados complejos
+  - Login, captcha, proxies
+  - Integraciones productivas externas
+
+7) Checklist de "demo lista para vender"
+- README y script dicen lo mismo.
+- Salida abre sin errores en Excel.
+- Hay al menos 1 caso "sin stock" o "consultar".
+- Se puede explicar el ROI en 1 frase.
+- Tiempo total de corrida: menos de 30 segundos.
+
+Conclusion
+La demo ya comunica bien el problema y la solucion. Con 3 ajustes obligatorios (consistencia de salida, manejo de errores, validaciones minimas) queda lista para mostrar valor real sin subir complejidad tecnica.
+
+---
+ERRORES/OBSERVACIONES VERIFICADAS (Revision tecnica del 2026-05-28)
+- Ejecucion del script: OK (`python src/generar_comparacion_precios.py`).
+- Error conceptual de consistencia:
+  - README comunica salida principal `output/comparacion_precios.xlsx`.
+  - Script genera `output/comparacion_precios_extraida.csv`.
+  - Impacto: durante una demo puede parecer que "no genero lo prometido".
+- Riesgo tecnico detectado:
+  - No hay manejo de excepciones por archivo HTML faltante o ruta invalida en CSV.
+  - Si una URL local no existe, la corrida se corta completa.
+
+---
+CAMBIOS IMPLEMENTADOS (2026-05-28)
+1) Consistencia README vs salida real
+- Se actualizo README para que la salida principal sea `output/comparacion_precios_extraida.csv` (coincide con el script).
+- Error resuelto: ya no hay contradiccion entre documentacion y ejecucion.
+
+2) Manejo de errores por fila
+- Se agrego `try/except` por registro del CSV.
+- Si una URL esta vacia o el HTML no existe, la corrida continua y la fila queda con:
+  - `Estado = Revisar`
+  - `Error extraccion` con detalle del problema.
+- Error/riesgo resuelto: una falla puntual ya no corta toda la demo.
+
+3) Validacion minima de campos
+- Si producto o sitio no se extraen del HTML, se completa con fallback desde el CSV.
+- Si aun faltan datos obligatorios, se marca `Estado = Revisar` y error explicito.
+
+4) Estandarizacion de estado
+- Se agrego mapeo a estados simples:
+  - Disponible
+  - Sin stock
+  - Consultar
+  - Revisar
+
+5) Columnas de decision agregadas
+- `Precio minimo_por_producto`
+- `Diferencia_vs_minimo`
+- `Proveedor_mas_barato`
+- Esto mejora mucho la narrativa comercial porque permite detectar el mejor precio de forma inmediata.
+
+6) Resumen de ejecucion por consola
+- Se imprime:
+  - total de filas procesadas
+  - filas sin precio
+  - filas con mejor precio por producto
+  - filas con error de extraccion
+
+---
+ESTADO ACTUAL DE ERRORES DETECTADOS
+- Inconsistencia README/salida: RESUELTO.
+- Falta de manejo de errores por fila: RESUELTO.
+- Riesgo de corte total por archivo faltante: RESUELTO.
+- Ejecucion verificada post-cambios: OK (`python src/generar_comparacion_precios.py`).
